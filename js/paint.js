@@ -296,5 +296,41 @@ window.onkeydown = (e) =>{
     }
 }
 
+$(document).ready(e=>{
+   $(".control-button").click(e => {
+         
+         switch(e.target.value)
+        {
+            case "LEFT_ARROW":
+                if(snake.xspeed != 1)
+                {
+                    snake.dir(-1,0);
+                    snake.update();
+                }
+                break;
+            case "UP_ARROW":
+                if(snake.yspeed != 1)
+                {
+                    snake.dir(0,-1);
+                    snake.update();
+                }
+                break; 
+            case "RIGHT_ARROW":
+                if(snake.xspeed != -1)
+                {
+                    snake.dir(1,0);
+                    snake.update();
+                }
+                break; 
+            case "DOWN_ARROW":
+                if(snake.yspeed != -1)
+                {
+                    snake.dir(0,1);
+                    snake.update();
+                }
+                break;
+        }
+   });
+});
 
 

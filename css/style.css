@@ -33,3 +33,50 @@ body
 {
     margin: 5px;
 }
+
+.control 
+{
+
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    text-align: center;
+}
+
+.btn-warning 
+{
+    background-color: rgb(255, 157, 0);
+    font-weight: bold;
+}
+
+#down 
+{
+    position: relative;
+    bottom: -10px;
+}
+
+#up 
+{
+    position: relative;
+    top: -20px;
+}
+
+#left 
+{
+    position: relative;
+    left: -5px;
+}
+
+#right 
+{
+    position: relative;
+    right: -5px;
+}
+
+.control-button:hover 
+{
+    background-color: rgb(205, 151, 50);
+} 
