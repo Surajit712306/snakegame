@@ -124,6 +124,7 @@ class Snake
             psc.removeChild(elem);
         }
         $(".top-canvas-container").remove();
+        $(".control").remove();
         psc.innerHTML="<b>You Won!</b>";
      }
 
@@ -139,6 +140,7 @@ class Snake
                  psc.removeChild(elem);
              }
              $(".top-canvas-container").remove();
+             $(".control").remove();
              psc.innerHTML = "<b>You Lost!</b>";
          }
      }
